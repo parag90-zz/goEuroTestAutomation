@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * This is singleton class, only single object will be created in lifetime
@@ -26,10 +27,12 @@ public class BrowserDriver {
         if (driver == null) {
             synchronized (BrowserDriver.class) {
                 if (driver == null) {
-                    System.setProperty("webdriver.chrome.driver", "/Users/pajain/Documents/Personal/goEuroTestAutomation/Setup/chromedriver2");
-                    driver = new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+                    System.setProperty("webdriver.chrome.driver", "Setup/chromedriver2");
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--start-maximized");
+                    driver = new ChromeDriver(options);
+                    //driver.manage().window().maximize();
+                    //driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
                 }
             }
         }
