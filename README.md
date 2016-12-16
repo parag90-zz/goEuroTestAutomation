@@ -6,10 +6,10 @@
  3. check on search landing page that the prices are sorted in descending order
 
 ###Project structure
- 1. src/java
-    i. pages: contains page file which conatins all actions
-    ii. testscripts: this has testcase files, Basically the actions and verifications
-    iii. Utilities: All other supported java files liek browserDriver, Sort utility
+ - src/java
+    * pages: contains page file which conatins all actions
+    * testscripts: this has testcase files, Basically the actions and verifications
+    * Utilities: All other supported java files liek browserDriver, Sort utility
 
  - Configuring the deparure and arrival city can be changes at test data file: TestData/TC001_PriceFilterTest.properties
  - All xpaths are kept at: ElementRepository/MainPage.properties
