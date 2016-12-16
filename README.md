@@ -5,7 +5,7 @@
  2. Search from Berlin to Pragues
  3. check on search landing page that the prices are sorted in descending order
 
-###Project structure
+###Project structure & config
  - src/java
     * pages: contains page file which conatins all actions
     * testscripts: this has testcase files, Basically the actions and verifications
