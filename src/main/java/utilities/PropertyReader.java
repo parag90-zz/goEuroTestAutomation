@@ -1,4 +1,4 @@
-package com.goeuro.utilities;
+package main.java.utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

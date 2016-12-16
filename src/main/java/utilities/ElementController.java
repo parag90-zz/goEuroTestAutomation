@@ -1,4 +1,4 @@
-package com.goeuro.utilities;
+package main.java.utilities;
 
 import java.util.Properties;
 

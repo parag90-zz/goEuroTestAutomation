@@ -1,19 +1,17 @@
-package com.goeuro.testscripts;
+package main.java.testscripts;
 
 import java.io.IOException;
 import java.util.Properties;
 
-import com.goeuro.utilities.SortingUtility;
+import main.java.utilities.SortingUtility;
+import main.java.pages.MainPage;
+import main.java.utilities.BrowserDriver;
+import main.java.utilities.PropertyReader;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.goeuro.pages.MainPage;
-import com.goeuro.utilities.BrowserDriver;
-import com.goeuro.utilities.PropertyReader;
-import org.testng.asserts.Assertion;
 
 /**
  * This testcase will test if the prices given on search results page are sorted

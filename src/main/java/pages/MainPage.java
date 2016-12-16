@@ -1,18 +1,17 @@
-package com.goeuro.pages;
+package main.java.pages;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
+import main.java.utilities.BrowserDriver;
+import main.java.utilities.ElementController;
+import main.java.utilities.PropertyReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import com.goeuro.utilities.BrowserDriver;
-import com.goeuro.utilities.ElementController;
-import com.goeuro.utilities.PropertyReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
