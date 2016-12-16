@@ -16,7 +16,7 @@ import com.goeuro.utilities.PropertyReader;
 import org.testng.asserts.Assertion;
 
 /**
- * This testcase will fill up the form and submits it
+ * This testcase will test if the prices given on search results page are sorted
  *
  * @author parag
  */
@@ -49,7 +49,6 @@ public class TC001_PriceFilterTest {
 
     @Test
     public void test() throws InterruptedException {
-        // Fill Name
         page.enterCity("departure",testData.getProperty("departureCity"));
         page.enterCity("arrival",testData.getProperty("arrivalCity"));
         page.toggleAirbnb();
