@@ -69,7 +69,7 @@ public class MainPage {
 
     public void waitForPricesTogetLoaded() {
         WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("priceResultDiv"))));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("prices"))));
     }
 
     public ArrayList<Integer> getAllPriceList() {
